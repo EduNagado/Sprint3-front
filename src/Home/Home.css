@@ -1,0 +1,154 @@
+/* Estrutura geral */
+.sections {
+    display: flex;
+    height: 100%;
+}
+
+.left-section, .right-section {
+    height: 100%;
+}
+
+.right-section {
+    width: 60%;
+    background-image: linear-gradient(to bottom, rgba(27, 3, 67, 0.88), rgba(40, 2, 144, 0.863), rgba(2, 59, 95, 0.869), rgba(0, 125, 129, 0.806));
+}
+
+.left-section {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Sessão da esquerda */
+.logo-login {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.top-logo img {
+    width: 100px;
+}
+
+.login a {
+    margin: 50px;
+    color: #68abe9;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+/* Sessão da direita */
+.text-img-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.text-img-right h2 {
+    font-size: 40px;
+    color: aliceblue;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+}
+
+.text-img-right img {
+    width: 600px;
+    border-radius: 60px;
+}
+
+/* Media Queries */
+
+/* Estilos para desktop */
+@media (max-width: 1199px) and (min-width: 992px) {
+    .text-button-left-section {
+        margin-top: 150px;
+    }
+    .top-logo img {
+        margin-right: 270px;
+    }
+}
+
+/* Estilos para tablets */
+@media (max-width: 991px) and (min-width: 768px) {
+    .left-section, .right-section {
+        width: 50%;
+    }
+    .text-img-right h2 {
+        font-size: 30px;
+    }
+    .text-img-right img {
+        width: 400px;
+        border-radius: 50px;
+    }
+    .top-logo img {
+        margin-right: 250px;
+    }
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 766px) {
+    .top-page {
+        background-color: white;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .logo-login {
+        margin-bottom: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .top-logo {
+        width: 100%;
+        justify-content: center;
+    }
+    .top-logo img {
+        width: 45%;
+    }
+    .login {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .login a {
+        margin: 0;
+    }
+    nav.navegacao ul {
+        gap: 5px;
+    }
+    .left-section, .right-section {
+        width: 100%;
+    }
+    .text-button-left-section {
+        margin-top: 100px;
+    }
+    .text-img-right h2 {
+        font-size: 24px;
+    }
+    .text-img-right img {
+        width: 90%;
+        border-radius: 30px;
+    }
+    .right-section {
+        background-image: none;
+    }
+}
