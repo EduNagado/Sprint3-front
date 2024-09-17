@@ -691,3 +691,178 @@ export const SectionSobre = styled.section`
     }
   }
 `;
+
+
+export const SectionLogin = styled.section`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+
+    /* Estilos para o cabeçalho */
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: transparent;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .top-page-login {
+        display: flex;
+        align-items: center;
+    }
+
+    .go-back {
+        margin-right: 15px;
+    }
+
+    .go-back img {
+        width: 40px;
+        height: auto;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .go-back img:hover {
+        transform: scale(1.1);
+    }
+
+    /* Adicionando estilos para o logo MEF */
+    .top-logo img {
+        width: 100px;
+        height: auto;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .top-logo img:hover {
+        transform: scale(1.1);
+    }
+
+    /* Estilos gerais da página */
+    .wrapper {
+        width: 420px;
+        background: rgba(0, 0, 0, 0.806);
+        color: #fff;
+        border-radius: 10px;
+        padding: 30px 40px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        margin: 0 auto;
+    }
+
+    .wrapper h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .wrapper .input-box {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        margin: 30px 0;
+        display: flex;
+        align-items: center;
+        color: #bae6fd;
+    }
+
+    .input-box input {
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        border-radius: 40px;
+        font-size: 16px;
+        color: #fff;
+        padding: 20px 45px 20px 20px;
+    }
+
+    .input-box input::placeholder {
+        color: #fff;
+    }
+
+    .input-box i {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .wrapper .lembrar-senha {
+        display: flex;
+        justify-content: space-between;
+        font-size: 15.5px;
+        margin: -15px 0 15px;
+    }
+
+    .lembrar-senha label input {
+        accent-color: #fff;
+        margin-right: 3px;
+    }
+
+    .lembrar-senha a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .lembrar-senha a:hover {
+        text-decoration: underline;
+    }
+
+    .wrapper .btn {
+        width: 100%;
+        height: 40px;
+        background: #fff;
+        border: none;
+        outline: none;
+        border-radius: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        font-size: 16px;
+        color: #333;
+        font-weight: 600;
+    }
+
+    .wrapper .cadastrar-link {
+        font-size: 15.5px;
+        text-align: center;
+        margin-top: 20px;
+        margin: 20px 0 15px;
+    }
+
+    .cadastrar-link p a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .cadastrar-link p a:hover {
+        text-decoration: underline;
+    }
+
+    /* Media queries para dispositivos menores */
+    @media (max-width: 768px) {
+        .wrapper {
+            width: 100%;
+            padding: 20px;
+        }
+
+        .top-page-login {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .go-back img, .top-logo img {
+            width: 50px;
+        }
+    }
+`;
