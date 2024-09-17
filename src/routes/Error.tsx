@@ -4,7 +4,7 @@ export default function Error(){
 
     return(
         <MainError>
-            <h1>Erro 404 - Página não encontrada.</h1>
+            <h1>Página não encontrada. Tente novamente mais tarde.</h1>
         </MainError>
     )
 }

@@ -49,3 +49,8 @@ export default tseslint.config({
 })
 ```
 # Sprint3-front
+- **Título: Sprint3-Front-2 ** 
+- **Descrição: Por enquanto nosso projeto consiste apenas no corpo do site e sua estilização** 
+- **Instalação: Para utilizar nosso projeto, basta baixar o projeto em sua máquina, abrir no vscode, abrir o terminal, escrever "npm install" e depois "npm run dev"** 
+- **Uso: O projeto ainda não possui funcionalidades, pois não está conectado com o api de outras matéria, porém o site já está pronto e estilizado para ser logado e conectado com as outras matérias**
+- **Contribuições: Os 3 participantes da MEF, puderam participar do projeto, auxiliando na criação de uma parte do projeto, apesar de um ou outro fazer a maior parte.** 
