@@ -495,3 +495,199 @@ export const SectionParcerias = styled.section`
     }
   }
 `;
+
+
+export const SectionSobre = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .top-page {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-logo-tipo2 {
+    width: 120px;
+
+    img {
+      width: 100px;
+    }
+  }
+
+  .imgs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .text-img-sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+  }
+
+  .img-sobre {
+    width: 300px;
+  }
+
+  .text-sobre {
+    p {
+      margin: 5px;
+      font-family: "Roboto", sans-serif;
+    }
+  }
+
+  .git-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(209, 209, 209);
+    padding: 2px;
+    border-radius: 30px;
+
+    &:hover {
+      background-color: rgb(164, 163, 163);
+    }
+
+    img {
+      width: 40px;
+    }
+
+    p {
+      margin: 2px;
+      color: rgb(37, 38, 38);
+    }
+  }
+
+  .link-sobre {
+    text-decoration: none;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+
+  .centralizar-link-repositorio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+  }
+
+  .div-link-repositorio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    background-color: rgb(209, 209, 209);
+    padding: 2px;
+    border-radius: 30px;
+
+    &:hover {
+      background-color: rgb(164, 163, 163);
+    }
+
+    img {
+      width: 50px;
+    }
+
+    p {
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 30px;
+      color: rgb(37, 38, 38);
+    }
+  }
+
+  .link-repositorio {
+    text-decoration: none;
+  }
+
+  /* Media Queries */
+
+  @media (max-width: 1199px) and (min-width: 992px) {
+    .top-logo-tipo2 {
+      width: 150px;
+
+      img {
+        width: 120px;
+      }
+    }
+
+    .navegacao a {
+      margin: 12px;
+      padding: 8px;
+    }
+  }
+
+  @media (max-width: 991px) and (min-width: 767px) {
+    .top-logo-tipo2 {
+      width: 100px;
+    }
+
+    .text-img-sobre {
+      margin: 20px;
+    }
+
+    .img-sobre {
+      width: 200px;
+    }
+
+    .text-sobre p {
+      font-size: 14px;
+      margin: 3px;
+    }
+
+    .git-button p {
+      font-size: 12px;
+    }
+
+    .div-link-repositorio {
+      width: 400px;
+    }
+
+    .link-repositorio {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 765px) {
+    .top-logo-tipo2 {
+      width: 80px;
+
+      img {
+        width: 60px;
+      }
+    }
+
+    .navegacao a {
+      margin: 5px;
+      padding: 5px;
+    }
+
+    .text-img-sobre {
+      margin: 10px;
+    }
+
+    .img-sobre {
+      width: 150px;
+    }
+
+    .text-sobre p {
+      font-size: 12px;
+    }
+
+    .git-button p {
+      font-size: 10px;
+    }
+
+    .div-link-repositorio {
+      width: 300px;
+    }
+
+    .link-repositorio {
+      font-size: 16px;
+    }
+  }
+`;
